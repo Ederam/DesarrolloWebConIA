@@ -6,3 +6,8 @@ git remote add origin https://github.com/Ederam/DesarrolloWebConIA.git
 git push -u origin main
 
 git push --set-upstream origin main
+
+setear usuario de Git
+$ git config --global user.name "ederam"  --> cambiar el usuario de Git
+$ git config --global user.email "eramirezc1@ucentral.edu.co" --> cambiar el email
+

@@ -1,0 +1,98 @@
+$ git init --> para iniciar nuestro repositorio
+$ git add archivo.extension --> agregar archivo
+$ git commit -m "Mensaje del commit" --> confirma los cambios que previamente adherimos
+$ git commit -am "Mensaje del commit" --> confirma los cambios y adhiere los archivos
+$ git add . --> agregar todos los archivos
+$ git add status --> Ver status de repositorio
+$ git add show --> muestra todos los cambios historicos hechos
+$ git add log archivo.extension --> mostrar historia entera de un archivo
+$ git add push --> enviar a repositorio remoto
+$ git add pull --> traer de repositorio remoto
+$ git config --> configuraciones de git
+$ git config --list --> ver configuraciones por defecto y cosas que faltan
+$ git config --list --show-origin --> ver donde estan las configuraciones guardadas
+$ git config --global user.name "EdwinRojas2041"  --> cambiar el usuario de Git
+$ git config --global user.email "rojas.edwin88@gmail.com" --> cambiar el email
+$ git show historia.txt --> mustra las modificaciones que tiene un archivo
+$ git diff clavecommit1 clavecommit2 --> Diferencias entre dos commits va la version mas vieja y luego la mas reciente
+$ git reset clavecommit --hard --> borrando toda la información que tengamos en el área de staging (y perdiendo todo para siempre)
+$ git reset clavecommit --soft --> mantiene allí los archivos del área de staging
+$ git checkout clavecommit archivo.extension --> para visualizar el archivo de esa version 
+$ git checkout master archivo.extension --> para traer ultima version 
+$ git log --stat --> Revision de los cambios
+$ git branch NombreRama --> Crear una rama
+$ git checkout NombreRama --> para moverse entre ramas
+$ git branch --> podemos ver las ramas locales
+$ git branch -r --> podemos ver las ramas remotas
+$ git branch -a --> podemos ver todas las ramas en blanco las locales en rojo las remotas
+$ git merge NombreRama --> para hacer el merge de la rama acrual con la que se invoca en el comando
+$ git remote add origin URL  --> agregar origen remoto de nuestros archivos
+$ git remote -v --> ver el origen remoto
+$ git remote rm origin --> eliminar origen remoto
+$ git push origin HEAD:NombreRama --> enviar rama especifica al repositorio de origen remoto 
+$ git pull origin NombreRama --> traer todos los cambios del repositorio de origen remoto
+$ git pull origin master --allow-unrelated-histories --> permite fusionar el repositorio de origen remoto con el local
+$ git log --all --graph --decorate --oneline --> ver todo el historial del repositorio
+$ git tag -a NombreTag -m "MensajeSubida" clavecommit --> creacion de un tag para control de versiones en el repositorio Local 
+$ git tag --> ver tags existentes en el repositorio Local
+$ git show-ref --tags --> ver tags y referencias al commit
+$ git push origin --tags --> subir tags a repositorio remoto
+$ alias arbol="git log --all --graph --decorate --oneline" --> ponerle un snippet o shortCut a los comandos
+$ git tag -d dormido --> eliminar tag en el repositorio local
+$ git push origin :refs/tags/dormido --> eliminar tag en el repositorio remoto
+$ git show-branch --> mostrar los btanch y su historia
+$ git show-branch --all --> mostrar los btanch y su historia con mas informacion 
+$ git clone url --> Clonar un proyecto de repositorio remoto a Local
+$ git rebase master --> pegar todos los commits de una rama en local para que no quede en la historia de la otra rama
+$ git branch -D ramasecundaria --> eliminat tama secundaria
+$ git stash --> guardar cambios en temporal
+$ git stash list --> ver el listado de cambios guardados en temporal
+$ git stash pop --> abrir los cambios guardados en temporal
+$ git stash branch english-version --> crear una rama con los cambios guardados en temporal
+$ git stash drop --> Elimivar cambios guardados en temporal
+$ git clean --dry-run --> simulacion de los archivos que van borrar
+$ git clean -f --> borra los archivos de la simulacion en fisico
+$ git cherry-pick clavecommit --> traer un commit viejo de otra a la rama actual 
+$ git commit --amend --> agregar cambios al ultimo commit
+$ git reflog --> ve toda la histiria hasta de branch eliminadospero que no se eliminaron con rebase
+$ git reset soft clavecommit --> resetiar todo el repositorio guardando los cambios en temporal
+$ git reset hard clavecommit --> resetiar todo el repositorio eliminando los cambios en temporal
+$ git reset HEAD@{2} --> para resetearlo a un commit especifico
+$ git grep palabra --> para buscar una palabra en todo el repositorio
+$ git grep -n palabra --> para buscar una palabra en todo el repositorio y mustra la linea
+$ git grep -c palabra --> La cantidad de veces que se encuentra la palabra en el archivo
+$ git log -S "palabra" --> La cantidad de veces que se encuentra la palabra en los commits
+$ git shortlog --> muestra los commits hechos por persona
+$ git shortlog -sn --> la cantidad de commits hechos por persona
+$ git shortlog -sn --all --> la cantidad de commits hechos por persona incluyendo los borrados
+$ git shortlog -sn --all --no-merges --> la cantidad de commits hechos por persona incluyendo los borrados sin contar merges
+$ git config --global alias.stats "shortlog -sn --all --no-merges" --> para agregar snippet o shortCut en git
+$ git blame blogpost.html --> ver quien hizo cada una de las lineas del archivo especifico
+$ git blame blogpost.html -c --> ver quien hizo cada una de las lineas del archivo especifico de manera identada
+$ git blame --help --> ver el manual de git
+
+
+
+
+
+
+
+
+
+$ cat historia.txt --> visualizar el contenido del archivo
+$ pwd --> saber que ruta estamos parados
+$ ssh-keygen -t rsa -b 4096 -C "rojas.edwin88@gmail.com" --> crear llaves publicas y privadas
+$ eval $(ssh-agent -s) --> para saber si el agente de lectura de llaves esta corriendo
+$ ssh-add ruta donde esta la llave privada --> Agregar la llave a nuestro sistema
+$ git remote set-url origin git@github.com:EdwinRojas2041/hyperblog.git --> cambiar la url de ssh de git
+$ history --> ver el hitorial de comandos
+$ gitk --> ver la version grafica de Git
+git config --global core.editor "'C:\Program Files (x86)\Notepad++\notepad++.exe' -multiInst -notabbar -nosession -noPlugin '$*'"
+
+
+.gitignore --> atchivo para ignorar en repositorio
+
+
+
+
+

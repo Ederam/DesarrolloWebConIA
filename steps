@@ -41,3 +41,6 @@ se agrega barra alteral <aside>
 
 git commit -m "Header, nav, section, article, aside, footer"
 
+agregar estilos dentro del html
+
+git commit -m "Agregando estilos dentro del html"

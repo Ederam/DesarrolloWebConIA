@@ -71,3 +71,8 @@ Margenes
 Se puede por dentro y por fuera
 
 git commit -m "Se agregan estilos para dar forma a lo que se visualiza"
+
+ajustes html para la visualizacion y aplicacion correcta de los estilos
+
+git commit -m "Ajustes html para el manejo de los id y etiquetas a aplicar estilos"
+

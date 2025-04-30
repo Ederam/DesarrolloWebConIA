@@ -44,3 +44,30 @@ git commit -m "Header, nav, section, article, aside, footer"
 agregar estilos dentro del html
 
 git commit -m "Agregando estilos dentro del html"
+
+uso de estilos desde hoja externa
+
+#container {
+    width: 80%;
+    margin: 0px auto;  ==> centrar el elemento lo mas al centro de la pantalla que pueda
+    border: red solid 1px; ==> agregar un borde
+}
+
+#nav ul li {
+    display: inline;
+    margin-right: 20px;
+    ==> aqui puede listar los elementos de la barrade navegacion como se quiera
+    float: left; ==> hace que se reorganizen hacia la izquierda   
+    list-style: none; ==> para que no tengan ningun estilo   
+    margin: 10px; ==> para que se separen un poco los elementos
+}
+
+hacer que los elementos de abajo no se suban
+    crear etiqueta div con la clase clearfix y crearle estilos
+    <div class="clearfix"></div>
+    border-bottom: #09110ba2 dashed 3px;  ==> linea puenteada
+
+Margenes
+Se puede por dentro y por fuera
+
+git commit -m "Se agregan estilos para dar forma a lo que se visualiza"

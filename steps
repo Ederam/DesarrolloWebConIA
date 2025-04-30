@@ -11,3 +11,33 @@ setear usuario de Git
 $ git config --global user.name "ederam"  --> cambiar el usuario de Git
 $ git config --global user.email "eramirezc1@ucentral.edu.co" --> cambiar el email
 
+Recuento html
+<!DOCTYPE html> especifica la version de html que va a usar, en este caso utilizaria la version html5
+<head> todos los metadatos, todo el contenido  que el usuario no va a ver. Son datos que le van a interesar al navegador pero el usuario no va a ver
+    <meta charset="utf-8"> para que el navegador reconozca las ñ, las tildes y lo pinte bien en la página
+    <title> el titulo en la pesaña para esa página
+<body> todo que aquello que si va a ver el usuario
+    <h1> encabezado para la página
+    <br/> salto de línea
+    <hr/> una línea separadora
+    <ul> lista desordenada
+        <li> es un elemento que se crearia con un punto
+    <ol> crea lista ordenada
+        <li> es un elemento que se crearia con un número
+    <table> para definir tablas
+        <tr> define una fila
+            <td> define columna
+
+Repaso CSS
+creacion de páginas básicas index.html
+
+instalar live server para abrir páginas
+extensiones/Live Server
+
+se agerga header para el encaezado
+se agrega barra de navegacion 
+se agrega un section para colcoar articulos
+se agrega barra alteral <aside>
+
+git commit -m "Header, nav, section, article, aside, footer"
+

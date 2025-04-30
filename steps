@@ -76,3 +76,28 @@ ajustes html para la visualizacion y aplicacion correcta de los estilos
 
 git commit -m "Ajustes html para el manejo de los id y etiquetas a aplicar estilos"
 
+separar contenidos de la barra lateral para que se despegue de los bordes 
+dentro de los estilos de aside
+    aplicar padding 10 px
+        se hace mas grande pero separaun poco los laterales
+        para ello se usa la funcion recalcular
+            width: calc(20% - 20px);
+        tambien se pueden ajustar padding por los lados 
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 20px;
+tambien se puede hacer lo mismo con el contenido
+al content agregar un padding general de 40px    
+para ello se debe recalcular el with
+    #content {    
+    float: left;
+    width: calc(80% - 80px);
+    min-height: 500px;
+    background-color: #23e453;  
+    padding: 40px;  
+}
+
+darle estilos a los articulos
+
+git commit -m "Separa contenido de la barra lateral, estilos dentro de aside y a los articulos"
+

@@ -45,16 +45,21 @@ nav ul li {
 
 #content {    
     float: left;
-    width: 80%;
+    width: calc(80% - 80px);
     min-height: 500px;
-    background-color: #23e453;    
+    background-color: #23e453;  
+    padding: 40px;  
 }
 
 aside {
     background-color: #da6b6b;    
     float: left;
-    width: 20%;
+    width: calc(20% - 20px);
     min-height: 500px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
 }
 
 footer {    
@@ -65,21 +70,24 @@ footer {
     line-height: 50px;    
 }
 
-/* .article {
-    float: left;
-    width: 70%;
+.article {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
 }
-article {
-    background-color: #f4f4f4;
-    margin-bottom: 20px;
-    padding: 20px;
-} */
-/* #sidebar {
-    float: right;
-    width: 25%;
-    background-color: #f4f4f4;
-    padding: 20px;
-} */
+
+.article:first-child {
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.article h2 {
+    color: #333;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
 
 
 

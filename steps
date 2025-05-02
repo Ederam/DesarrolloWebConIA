@@ -306,3 +306,29 @@ grid-template-rows: auto;
 
 git commit -m "Ajuste de tamaños pro ¡coluna y por fila"
 
+Vamos a reajustar para ver otras opciones
+Editar el html para dejar solo 4 cajas
+
+.c1 {
+    background-color: lightblue;
+    grid-column: 1 / span 2; 
+}
+
+COn estos estilos se logra acomodar los elementos de la siguiente forma
+________________________________________
+                CABCAERA
+
+
+___________________________________________
+                MENU
+___________________________________________
+            CONTENIDO       | BARRA LATERAL
+                            |
+                            |
+                            |
+                            |
+                            |
+___________________________________________
+            PIE DE PAGINA
+___________________________________________         
+

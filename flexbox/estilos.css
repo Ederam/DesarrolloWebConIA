@@ -8,9 +8,13 @@ body {
     background: #ccc;
     padding: 20px;
     display: flex;    
-    flex-flow: wrap;
-    /* flex-wrap: wrap; */
-    flex-direction: row;
+    flex-flow: row wrap;  
+    justify-content: space-between;
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    align-items:center;
+    align-content: space-between;
 }
 
 .caja {
@@ -20,9 +24,9 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     width: 120px;   
-    height: 120px;
+    /* height: 120px; */
     line-height: 120px;
     text-align: center;
     margin: 5px;
-    /* float: left; */
+    overflow: hidden;
 }

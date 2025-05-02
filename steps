@@ -128,3 +128,51 @@ Se dejan laas 4 cajas iniciales en el html
 
 git commit -m "Uso de flexbox, organizacion de los elementos internos con diferentes opciones"
 
+se quitan cajas del html para utilizar las funciones de la propiedad Justify-content
+-------------------------
+a  b  c  d
+
+justify-content: space-between; ==> hace que los elementos se reubique por todo el flex container
+container
+-------------------------
+a       b       c       d
+
+justify-content: space-around; ==> los acerca un poco los elementos
+container
+-------------------------
+    a    b    c    d
+
+justify-content: space-evenly; ==> los acerca un poco mas que el anterior los elementos
+container
+-------------------------
+     a   b   c   d
+
+justify-content: space-center; ==> agrupa los elementos hacia el centro
+container
+-------------------------
+        a b c d
+
+Se pueden adaptar los elementos a la altura del flex-container
+para verlo colocaremos de nuevo un buen numero de cajas
+añadimos la propiedad align-items:felx-end;
+
+container
+-------------------------
+a b c d a b c d a b c d
+a b c d a b c d a b c d
+a                     b
+
+si el contenedor tiene una altura configurada
+se puede trabajar con los tamaños de los elemetos y el ordenado del mismo no solo en fila sino en columna
+
+align-items:center;
+align-content: space-between;
+
+container
+--------------------------
+a   b   c    d   a   b   c
+a   b   c    d   a   b   c 
+a    b    c    c    e    f
+
+git commit -m "Uso de distintas propiedades de flex para reogranizar dentro del flex-container"
+

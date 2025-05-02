@@ -176,3 +176,35 @@ a    b    c    c    e    f
 
 git commit -m "Uso de distintas propiedades de flex para reogranizar dentro del flex-container"
 
+Dejamos unicamente 3 cajas para realizar otro ejercicio
+justify-content: center;
+align-content: center;
+
+container
+--------------------------
+            a b c
+
+cambio de tamaño a las cajas
+.caja
+    width: 2000px;   
+    line-height: 200px;
+
+quedaria igual pero con el tamño de las cajas mas grandesitas
+
+COn flex-container se puede manejar por estilos el ordenamiento de los elementos
+.c1 {
+    background-color: lightblue;
+    order: 2;
+}
+
+tambien se puede modificar el ancho de uno de los elementos 
+flex-grow: 5;
+se pueden dejar de distintos tamños como se quiera
+se puede hacer igaul con el 
+flex-basis: 50%;
+
+order: 2;
+flex-grow: 1;
+flex-basis: 50%;
+
+git commit -m "uso de las propiedades order, flex-grow, flex-basis para editar los tamaños y el orden de los elementos dentro del flex-container"

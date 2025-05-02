@@ -271,3 +271,17 @@ quiatmos los tamños de la caja para que se  vean los efectos con ayor claridad 
 
 git commit -m "grid-layout, ver los efectos sin tamaños ni margin"
 
+Manejo de porcentajes de tamaños de los elementos
+grid-template-columns: 45% 20% 12%;
+
+Tambien se puede modificar el comportamiento de las filas
+grid-template-rows: 100px auto;
+
+organizar al inicio del contenedor
+justify-content: flex-start;
+
+separar las columnas
+justify-content: space-between;
+
+git commit -m "Agregar propiedades de justify-content"
+

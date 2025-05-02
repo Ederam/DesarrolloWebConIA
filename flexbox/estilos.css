@@ -13,7 +13,10 @@ body {
     background-color: lightgreen;    
     padding: 20px;
     border: 1px solid black;    
-    grid-template-columns: auto auto auto; /* n * cada auto  columnas */
+    grid-template-columns: 45% 20% 12%;
+    /* grid-template-rows: 100px auto 120px auto; */
+    grid-template-rows: 100px auto;
+    justify-content: stretch;
 }
 
 .caja {

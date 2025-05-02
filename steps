@@ -101,3 +101,30 @@ darle estilos a los articulos
 
 git commit -m "Separa contenido de la barra lateral, estilos dentro de aside y a los articulos"
 
+FLEXBOX BASICO
+creacion de carpeta para flexbox
+creacion de html basico y hoja de estilos asociada
+
+float: left; ==> para organizar los elementos uno al lado del otro
+
+con flexbox esa isntruccion equivale a 
+
+.flex-container {    
+    display: flex;    
+}
+a esta clase se le puede utilizar tanto vertical como de manera horizontal
+    flex-direction: row;
+    flex-direction: column;
+    flex-direction: column-reverse; ==> invierte el orden de los elementos
+    flex-direction: row-reverse; ==> invierte el orden y los reubica hacia el otro lado
+ si añado mas elementos y se agrega rel atributo 
+    flex-wrap: wrap;
+    se reacomodan los elementos para que se puedan ver bien
+    por defecto es nowrap
+    hay otra propiedad que permite combinar las dos 
+        flex-flow: wrap;
+        ay ya no es necesario tener las otras propiedades
+Se dejan laas 4 cajas iniciales en el html
+
+git commit -m "Uso de flexbox, organizacion de los elementos internos con diferentes opciones"
+

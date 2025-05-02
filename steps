@@ -285,3 +285,24 @@ justify-content: space-between;
 
 git commit -m "Agregar propiedades de justify-content"
 
+Agregar nombres a las clases de las cajas para personalizar
+estilos para los elementos hijos o que se encuentran dentro de grid-layout
+
+modificamos el tamaño dentro de grid-layout
+grid-template-columns: auto auto auto;
+grid-template-rows: auto;
+
+.c1 {
+    background-color: lightblue;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.c2 {
+    background-color: lightcoral;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+git commit -m "Ajuste de tamaños pro ¡coluna y por fila"
+

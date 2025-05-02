@@ -208,3 +208,21 @@ flex-grow: 1;
 flex-basis: 50%;
 
 git commit -m "uso de las propiedades order, flex-grow, flex-basis para editar los tamaños y el orden de los elementos dentro del flex-container"
+
+GRID LAYOUT
+Se agregan las cajas y se agergan dentro de un div de class como grid-layout para editar los estilos
+
+float: left; ==> esta propiedad hace que se reogranicen los elementos dentro de la pantalla
+
+se agragn propiedades al grid-layout
+.grid-layout {
+    width: 80%;
+    margin: 0 auto;
+    background-color: lightgreen;    
+    padding: 20px;
+    border: 1px solid black;    
+}
+se ve en pantalla con algunas cajas superpuestas
+
+git commit -m "creacion de archivos para el ejercicio, se añaden estilos iniciales y elementos iniciales, se agregan estilos para el grid-layout"
+

@@ -9,8 +9,11 @@ body {
 .grid-layout {
     height: 650px;
     display: grid;
-    grid-template-columns: 80% auto;
-    grid-template-rows: 20% 10% 60% auto;
+    grid-template-areas: 'cabecera cabecera'
+                         'menu menu'
+                         'contenido lateral'
+                         'footer footer';
+    grid-template-rows: 20% 10% auto 10%;                         
     background-color: lightgreen;    
     border: 1px solid black;    
 }
@@ -25,26 +28,26 @@ body {
 
 .c1 {
     background-color: lightblue;
-    grid-column: 1 / span 2; 
+    grid-area: cabecera;
 }
 
 .c2 {
     background-color: lightcoral;
-    grid-column: 1 / span 2; 
+    grid-area: menu;
     
 }
 
 .c3 {
     background-color: lightgreen;
-    
+    grid-area: contenido;
 }
 
 .c4 {
     background-color: lightpink;
-    grid-column: 2 / span 1; 
+    grid-area: lateral;
 }
 
 .c5 {
     background-color: lightyellow;
-    grid-column: 1 / span 2; 
+    grid-area: footer; 
 }

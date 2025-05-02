@@ -332,3 +332,74 @@ ___________________________________________
             PIE DE PAGINA
 ___________________________________________         
 
+git commit -m "editando estilos de filas y columnas hios del container grid-layout"
+
+uso de grid-area
+quitar 
+    grid-template-columns: 80% auto;
+    grid-template-rows: 20% 10% 60% auto;
+quitar estilos de las cajas
+se quedan todos en linea vertical
+
+________________________________________
+                CABCAERA
+___________________________________________
+                  MENU
+___________________________________________
+                CONTENIDO   
+___________________________________________            
+                BARRA LATERAL
+___________________________________________                                            
+                PIE DE PAGINA
+___________________________________________         
+
+
+se editan todas las caracteristicas dentro del layout
+grid-template-areas: 'cabecera cabecera'
+                         'menu menu'
+                         'contenido lateral'
+                         'footer footer';
+despues ahi que indicar las areas a que corresponden las clases
+.c1 {
+    background-color: lightblue;
+    grid-area: cabecera;
+}
+
+.c2 {
+    background-color: lightcoral;
+    grid-area: menu;
+    
+}
+
+.c3 {
+    background-color: lightgreen;
+    grid-area: contenido;
+}
+
+.c4 {
+    background-color: lightpink;
+    grid-area: lateral;
+}
+
+.c5 {
+    background-color: lightyellow;
+    grid-area: footer; 
+}
+
+luego editar el tamaño de las rows grid-template-rows: 20% 10% auto 10%;                         
+
+quedaria asi
+.grid-layout {
+    height: 650px;
+    display: grid;
+    grid-template-areas: 'cabecera cabecera'
+                         'menu menu'
+                         'contenido lateral'
+                         'footer footer';
+    grid-template-rows: 20% 10% auto 10%;                         
+    background-color: lightgreen;    
+    border: 1px solid black;    
+}
+
+git commit -m "uso de grid-template-areas dentro de grid-layout para dar tamaños y estilo sa cada area que se requiera"
+

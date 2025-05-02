@@ -262,3 +262,12 @@ grid-layout
 
 git commit -m "manjeo de propiedad grid-template-columns: auto auto auto; con grid-layout para poder ubicar los elementos"
 
+quiatmos los tamños de la caja para que se  vean los efectos con ayor claridad y el margin
+
+    width: 200px; 
+    height: 150px;
+    margin: 15px;
+    
+
+git commit -m "grid-layout, ver los efectos sin tamaños ni margin"
+
